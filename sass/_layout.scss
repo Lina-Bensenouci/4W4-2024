@@ -22,6 +22,11 @@ body{
   border: 3px double #3f3f3f;
   padding: 3rem 1rem;
   background-color: rgba(0,0,0,var(--transparence-section));
+  text-align: center;
+}
+
+.global > section{
+  min-width: 80%;
 }
 
 #entete, #footer{
