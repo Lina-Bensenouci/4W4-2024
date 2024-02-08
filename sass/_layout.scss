@@ -17,11 +17,15 @@ body{
 
 .global > section,
 .global > header,
-.gloabl > footer{
+.global > footer{
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  border: 3px double #3f3f3f;
+  padding: 3rem 1rem;
+  background-color: rgba(0,0,0,var(--transparence-section));
 }
-
+#entete, #footer{
+  min-height: 20vh;
+}
 #entete{
   background-color: var(--couleur-arriere-entete);
 }

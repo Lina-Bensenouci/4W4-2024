@@ -18,6 +18,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-evenement: rgb(92, 176, 197);
   --couleur-arriere-galerie: rgb(194, 207, 97);
   --couleur-arriere-footer: rgb(225, 160, 96);
+  /*niveau de transparence des h*/
+  --transparence-h1: .5;
+  --transparence-section: .05;
 }
 
 * {
@@ -39,9 +42,15 @@ body {
 
 .global > section,
 .global > header,
-.gloabl > footer {
+.global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  border: 3px double #3f3f3f;
+  padding: 3rem 1rem;
+  background-color: rgba(0, 0, 0, var(--transparence-section));
+}
+
+#entete, #footer {
+  min-height: 20vh;
 }
 
 #entete {
@@ -69,6 +78,7 @@ https://chrisburnell.com/clamp-calculator/
 */
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  color: rgba(0, 0, 0, var(--transparence-h1));
   font-style: normal;
   font-weight: 600;
 }
@@ -77,10 +87,27 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-style: normal;
   font-weight: 500;
+  color: rgba(63, 9, 9, var(--transparence-h1));
 }
 
 h3 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1rem, -0.91rem + 4.389vw, 2.18rem);
   font-style: normal;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(1rem, -0.91rem + 3.389vw, 1.72rem);
+  font-style: normal;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: clamp(1rem, -0.91rem + 2.389vw, 1.22rem);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: clamp(1rem, -0.91rem + 1.389vw, 1rem);
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
