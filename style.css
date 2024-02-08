@@ -81,6 +81,7 @@ h1 {
   color: rgba(0, 0, 0, var(--transparence-h1));
   font-style: normal;
   font-weight: 600;
+  font-family: "Protest Revolution", sans-serif;
 }
 
 h2 {
@@ -94,20 +95,24 @@ h3 {
   font-size: clamp(1rem, -0.91rem + 4.389vw, 2.18rem);
   font-style: normal;
   font-weight: 500;
+  font-family: "Protest Riot", sans-serif;
 }
 
 h4 {
   font-size: clamp(1rem, -0.91rem + 3.389vw, 1.72rem);
   font-style: normal;
   font-weight: 500;
+  font-family: "Protest Riot", sans-serif;
 }
 
 h5 {
   font-size: clamp(1rem, -0.91rem + 2.389vw, 1.22rem);
   font-weight: 500;
+  font-family: "Protest Riot", sans-serif;
 }
 
 h6 {
   font-size: clamp(1rem, -0.91rem + 1.389vw, 1rem);
   font-weight: 500;
+  font-family: "Protest Riot", sans-serif;
 }/*# sourceMappingURL=style.css.map */
