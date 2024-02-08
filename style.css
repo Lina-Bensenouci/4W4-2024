@@ -1,23 +1,23 @@
 @charset "UTF-8";
 /*
-Theme Name: Lina Bensenouci
+Theme Name: Theme Lina
 Author: Lina Bensenouci
-Author URI: https://wordpress.org/
+Author URI: https://referenced.ca/
 Description: Thème de base developpe dans le cours 4W4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentytwenty
+Text Domain: Theme Lina
 */
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: #045;
-  --couleur-arriere-footer: #630;
+  --couleur-arriere-entete: #df5e5e;
+  --couleur-arriere-accueil: rgb(82, 148, 82);
+  --couleur-arriere-evenement: rgb(92, 176, 197);
+  --couleur-arriere-galerie: rgb(194, 207, 97);
+  --couleur-arriere-footer: rgb(225, 160, 96);
 }
 
 * {
@@ -28,16 +28,19 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 body {
   display: flex;
   flex-direction: column;
+  font-family: "prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .gloabl > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -65,6 +68,19 @@ body {
 https://chrisburnell.com/clamp-calculator/
 */
 h1 {
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-style: normal;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-style: normal;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
