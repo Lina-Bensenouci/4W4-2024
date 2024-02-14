@@ -13,15 +13,36 @@ Text Domain: Theme Lina
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #df5e5e;
-  --couleur-arriere-accueil: rgb(82, 148, 82);
-  --couleur-arriere-evenement: rgb(92, 176, 197);
-  --couleur-arriere-galerie: rgb(194, 207, 97);
-  --couleur-arriere-footer: rgb(225, 160, 96);
-  --couleur-h6: rgb(0, 0, 87,0.8);
-  /*niveau de transparence des h*/
-  --transparence-h1: .5;
-  --transparence-section: .05;
+  /*
+  --couleur-arriere-entete : #df5e5e;
+  --couleur-arriere-accueil : rgb(82, 148, 82);
+  --couleur-arriere-evenement : rgb(92, 176, 197);
+  --couleur-arriere-galerie : rgb(194, 207, 97);
+  --couleur-arriere-footer : rgb(225, 160, 96);
+  --couleur-h6 : rgb(0, 0, 87,0.8);
+  //niveau de transparence des h
+  --transparence-h1 : .5;
+  //transparence section
+  --transparence-section : .05;
+  */
+  --u1: 200;
+  --u2: calc(var(--u1) + 9);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  --s-arriere: 100%;
+  --s-avant: 90%;
+  --l-arriere: 30%;
+  --l-avant: 42%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 
 * {
@@ -61,22 +82,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-avant-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-avant-footer);
 }
 
 /*
@@ -84,7 +110,6 @@ https://chrisburnell.com/clamp-calculator/
 */
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  color: rgba(0, 0, 0, var(--transparence-h1));
   font-style: normal;
   font-weight: 600;
   font-family: "Protest Revolution", sans-serif;
@@ -94,7 +119,6 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-style: normal;
   font-weight: 500;
-  color: rgba(63, 9, 9, var(--transparence-h1));
 }
 
 h3 {
@@ -115,12 +139,10 @@ h5 {
   font-size: clamp(1rem, -0.91rem + 2.389vw, 1.22rem);
   font-weight: 500;
   font-family: "Protest Riot", sans-serif;
-  color: rgb(11, 11, 108);
 }
 
 h6 {
   font-size: clamp(1rem, -0.91rem + 1.389vw, 1rem);
   font-weight: 500;
   font-family: "Protest Riot", sans-serif;
-  color: var(--couleur-h6);
 }/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ https://chrisburnell.com/clamp-calculator/
 
 h1{
   font-size:clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  color: rgba(#000, var(--transparence-h1));
+  
   font-style: normal;
   font-weight: 600;
   font-family: 'Protest Revolution', sans-serif;
@@ -14,7 +14,7 @@ h2{
   font-size:clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-style: normal;
   font-weight: 500;
-  color: rgba(#3f0909, var(--transparence-h1));
+  
 }
 h3{
   font-size:clamp(1rem, -0.910rem + 4.389vw, 2.18rem);
@@ -32,11 +32,11 @@ h5{
   font-size: clamp(1rem, -0.910rem + 2.389vw, 1.22rem);
   font-weight: 500;
   font-family: 'Protest Riot', sans-serif;
-  color: rgb(11, 11, 108);
+  
 }
 h6{
   font-size: clamp(1rem, -0.910rem + 1.389vw, 1rem);
   font-weight: 500;
   font-family: 'Protest Riot', sans-serif;
-  color: var(--couleur-h6);
+ 
 }
