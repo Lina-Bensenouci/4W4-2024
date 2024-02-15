@@ -19,30 +19,43 @@
   --u3 : calc(var(--u2) - 30); //Couleur analogue gauche
   --u4 : calc(var(--u2) + 30); //Couleur analogue droite
   //La saturation
-    --s-arriere : 100%;
+    --s-arriere : 40%;
     --s-avant : 90%;
 
   //La luminosité
-  --l-arriere : 30%;
-  --l-avant : 42%;
+  --l-arriere : 70%;
+  --l-avant : 80%;
 
-  //Couleur arriere plam background color
-  --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  //Couleur arriere plan background color
+  /*--couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
   --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));*/
 
   //couleur avant plan color
-  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-entete: hsl(var(--u3), var(--s-avant), var(--l-avant));
   --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u3), var(--s-avant), var(--l-avant));
 
   //--couleur-h6 : rgb(0, 0, 87,0.8);
   //niveau de transparence des h
   //--transparence-h1 : .5;
   //transparence section
-  --transparence-section : 0.5;
+  --transparence-section : 0.2;
+
+  //Couleur monochrome
+  --couleur-arriere-entete : hsl(var(--u1), 100%, 40%);
+  --couleur-arriere-accueil : hsl(var(--u1), 70%, 50%) ;
+  --couleur-arriere-footer : hsl(var(--u1), 100%,40%);
+
+  //Pour que la diagonal soit visible
+  --couleur-arriere-evenement : var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie : var(--couleur-arriere-evenement);
+  --couleur-arriere-diagonal : hsl(var(--u1), 100%, 50%);
+  --couleur-arriere-bouton: #0056b3;
+  --couleur-hover-bouton: #81bdfd;
+
 }

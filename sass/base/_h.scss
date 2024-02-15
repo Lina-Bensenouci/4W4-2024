@@ -4,7 +4,7 @@ https://chrisburnell.com/clamp-calculator/
 
 h1{
   font-size:clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
-  
+  letter-spacing: -3px;
   font-style: normal;
   font-weight: 600;
   font-family: 'Protest Revolution', sans-serif;
@@ -14,7 +14,6 @@ h2{
   font-size:clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-style: normal;
   font-weight: 500;
-  
 }
 h3{
   font-size:clamp(1rem, -0.910rem + 4.389vw, 2.18rem);

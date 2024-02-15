@@ -29,21 +29,29 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --u2: calc(var(--u1) + 9);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
-  --s-arriere: 100%;
+  --s-arriere: 40%;
   --s-avant: 90%;
-  --l-arriere: 30%;
-  --l-avant: 42%;
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --l-arriere: 70%;
+  --l-avant: 80%;
+  /*--couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere)) ;
+  --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));*/
+  --couleur-avant-entete: hsl(var(--u3), var(--s-avant), var(--l-avant));
   --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --transparence-section: 0.5;
+  --couleur-avant-galerie: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --transparence-section: 0.2;
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 40%);
+  --couleur-arriere-accueil: hsl(var(--u1), 70%, 50%) ;
+  --couleur-arriere-footer: hsl(var(--u1), 100%,40%);
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-evenement);
+  --couleur-arriere-diagonal: hsl(var(--u1), 100%, 50%);
+  --couleur-arriere-bouton: #0056b3;
+  --couleur-hover-bouton: #81bdfd;
 }
 
 * {
@@ -59,16 +67,16 @@ body {
 
 .global {
   display: flex;
-  justify-content: center;
   min-height: 40vh;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
   flex: 0 1 900px;
+  z-index: 1;
   padding: 3rem 1rem;
-  background-color: rgba(0, 0, 0, var(--transparence-section));
   text-align: center;
 }
 
@@ -89,6 +97,7 @@ body {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   color: var(--couleur-avant-accueil);
+  display: flex;
 }
 
 #evenement {
@@ -107,11 +116,51 @@ body {
   position: relative;
 }
 
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--couleur-arriere-bouton);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1%;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--couleur-hover-bouton);
+}
+
+footer > .button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: var(--couleur-arriere-bouton);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  transition: background-color 0.3s ease;
+}
+
+footer > .button:hover {
+  background-color: var(--couleur-hover-bouton);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
 /*
 https://chrisburnell.com/clamp-calculator/
 */
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  letter-spacing: -3px;
   font-style: normal;
   font-weight: 600;
   font-family: "Protest Revolution", sans-serif;
@@ -163,9 +212,30 @@ h6 {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 71px;
+  height: 72px;
 }
 
 .vague .shape-fill {
   fill: #FFFFFF;
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  /*left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;*/
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: var(--couleur-arriere-diagonal);
+  transform: skewY(-5deg);
+  border: solid 1px black;
+  box-shadow: 10px 10px 30px 10px;
 }/*# sourceMappingURL=style.css.map */
