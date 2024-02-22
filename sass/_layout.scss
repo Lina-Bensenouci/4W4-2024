@@ -12,7 +12,7 @@ body{
 .global{
   display: flex;
   min-height: 40vh;
-  justify-content: center;
+  
 }
 
 .global > section,
@@ -20,8 +20,12 @@ body{
 .global > footer{
   flex: 0 1 900px;
   z-index: 1;
-  padding: 3rem 1rem;
-  text-align: center;
+  padding: 8rem 5rem;
+  
+}
+
+.global > header{
+  flex: 1;
 }
 
 .global > section{
@@ -31,10 +35,12 @@ body{
 #entete, #footer{
   min-height: 20vh;
 }
+
 #entete{
   background-color: var(--couleur-arriere-entete);
   color : var(--couleur-avant-entete);
   position: relative;
+  min-height: 100vh;
 }
 
 #accueil{
@@ -91,12 +97,4 @@ footer > .button {
 
 footer > .button:hover {
   background-color: var(--couleur-hover-bouton); 
-}
-
-a{
-  color: black;
-}
-
-a:hover{
-  color: white ;
 }

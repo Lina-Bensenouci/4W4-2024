@@ -1,0 +1,23 @@
+a{
+  //olor: var(--couleur-lien);
+  background-color: red;
+  text-decoration: none;
+  //transition: color 0.5s ease-in-out;
+  color: #00ff00;
+  font-size:1.3rem;
+  &:hover{
+    color:blueviolet
+  }
+}
+/*a:hover{
+  color: var(--couleur-hover);
+}
+
+a:focus{
+  outline: 5px solid var(--focus-outline-color);
+  outline-offset: 2px;
+}
+
+a:visited{
+  color: var(--couleur-lien-active);
+}*/

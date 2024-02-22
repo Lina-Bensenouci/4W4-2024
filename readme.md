@@ -1,4 +1,4 @@
-# Labo #1
+# Labo #2
 ## Introduction à Sass et révision de HTML/CSS
 ## Integration d'effet vague et diagonal
 

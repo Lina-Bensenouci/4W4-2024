@@ -52,6 +52,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-diagonal: hsl(var(--u1), 100%, 50%);
   --couleur-arriere-bouton: #0056b3;
   --couleur-hover-bouton: #81bdfd;
+  --couleur-arriere-diagonal: gray;
+  --couleur-bouton1: rgb(105, 190, 255);
+  --couleur-bouton2: rgb(53, 134, 255);
+  --couleur-bouton3: rgb(147, 208, 255);
+  --couleur-bouton4: rgb(53, 134, 255);
+  --couleur-lien: black;
+  --couleur-hover: red;
 }
 
 * {
@@ -68,7 +75,6 @@ body {
 .global {
   display: flex;
   min-height: 40vh;
-  justify-content: center;
 }
 
 .global > section,
@@ -76,8 +82,11 @@ body {
 .global > footer {
   flex: 0 1 900px;
   z-index: 1;
-  padding: 3rem 1rem;
-  text-align: center;
+  padding: 8rem 5rem;
+}
+
+.global > header {
+  flex: 1;
 }
 
 .global > section {
@@ -92,6 +101,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-avant-entete);
   position: relative;
+  min-height: 100vh;
 }
 
 #accueil {
@@ -147,12 +157,10 @@ footer > .button:hover {
   background-color: var(--couleur-hover-bouton);
 }
 
-a {
-  color: black;
-}
-
-a:hover {
-  color: white;
+.entete__header {
+  background-image: url("images/wordpress-theme.png");
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
 }
 
 /*
@@ -196,6 +204,46 @@ h6 {
   font-size: clamp(1rem, -0.91rem + 1.389vw, 1rem);
   font-weight: 500;
   font-family: "Protest Riot", sans-serif;
+}
+
+span {
+  display: block;
+}
+
+a {
+  background-color: red;
+  text-decoration: none;
+  color: #00ff00;
+  font-size: 1.3rem;
+}
+a:hover {
+  color: blueviolet;
+}
+
+/*a:hover{
+  color: var(--couleur-hover);
+}
+
+a:focus{
+  outline: 5px solid var(--focus-outline-color);
+  outline-offset: 2px;
+}
+
+a:visited{
+  color: var(--couleur-lien-active);
+}*/
+button {
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  padding: 12px 24px;
+  background-image: linear-gradient(120deg, var(--couleur-bouton1), var(--couleur-bouton2));
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, var(--couleur-bouton3), var(--couleur-bouton4));
+  transform: translateY(-10px);
 }
 
 .vague {

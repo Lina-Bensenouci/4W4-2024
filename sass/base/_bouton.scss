@@ -1,0 +1,14 @@
+button{
+font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+padding: 12px 24px;
+//background-image: linear-gradient(120deg, var(--bouton-couleur1), var(--bouton-couleur-2));
+background-image: linear-gradient(120deg, var(--couleur-bouton1), var(--couleur-bouton2));
+margin-top: 30px;
+border-radius: 10px;
+transition: transform 0.2s;
+}
+
+button:hover{
+  background-image: linear-gradient(120deg, var(--couleur-bouton3), var(--couleur-bouton4));
+  transform: translateY(-10px);
+}
