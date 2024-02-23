@@ -12,7 +12,7 @@ body{
 .global{
   display: flex;
   min-height: 40vh;
-  
+  justify-content: center;
 }
 
 .global > section,
@@ -21,7 +21,6 @@ body{
   flex: 0 1 900px;
   z-index: 1;
   padding: 8rem 5rem;
-  
 }
 
 .global > header{
@@ -29,7 +28,7 @@ body{
 }
 
 .global > section{
-  min-width: 80%;
+  min-width: 20%;
 }
 
 #entete, #footer{
@@ -47,14 +46,11 @@ body{
   background-color: var(--couleur-arriere-accueil);
   color : var(--couleur-avant-accueil);
   display: flex;
-  
 }
 
 #evenement{
   background-color: var(--couleur-arriere-evenement);
   color : var(--couleur-avant-evenement);
-  
-  
 }
 
 #galerie{
@@ -67,34 +63,21 @@ body{
   color : var(--couleur-avant-footer);
   position: relative;
 }
-
-.button { 
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--couleur-arriere-bouton); 
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1%;
-  transition: background-color 0.3s ease;
+footer > div{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
 }
 
-.button:hover {
-  background-color: var(--couleur-hover-bouton); 
-}
-
-footer > .button { 
-  display: inline-block;
-  padding: 10px 10px;
-  background-color: var(--couleur-arriere-bouton); 
-  color: #fff;
-  text-decoration: none;
-  border-radius: 10px;
-  margin-top: 1%;
-  margin-bottom: 2%;
-  transition: background-color 0.3s ease;
-}
-
-footer > .button:hover {
-  background-color: var(--couleur-hover-bouton); 
+@media screen and (max-width:600px) {
+  #entete{
+    min-height: 70vh;
+  }
+  footer > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+  }
 }

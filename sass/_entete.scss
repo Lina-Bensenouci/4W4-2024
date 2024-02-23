@@ -3,3 +3,10 @@
   background-repeat: no-repeat;
   background-position: 100% 40%;
 }
+
+@media screen and (max-width:600px) {
+  .entete__header{
+    background-size: 30%;
+    background-position: 10% 14%;
+  }
+}

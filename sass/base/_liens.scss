@@ -1,23 +1,20 @@
 a{
-  //olor: var(--couleur-lien);
-  background-color: red;
+  color: var(--couleur-lien);
   text-decoration: none;
-  //transition: color 0.5s ease-in-out;
-  color: #00ff00;
+  transition: color 0.5s ease-in-out;
   font-size:1.3rem;
   &:hover{
-    color:blueviolet
+    color:var(--couleur-hover);
+    text-decoration: underline;
+  }
+  &:focus{
+    outline: 2px solid var(--focus-outline-color);
+    outline-offset: 1px;
   }
 }
-/*a:hover{
-  color: var(--couleur-hover);
-}
 
-a:focus{
-  outline: 5px solid var(--focus-outline-color);
-  outline-offset: 2px;
+@media screen and (max-width:600px){
+  a{
+    font-size: 1rem;
+  }
 }
-
-a:visited{
-  color: var(--couleur-lien-active);
-}*/

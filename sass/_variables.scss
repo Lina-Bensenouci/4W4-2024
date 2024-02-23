@@ -58,14 +58,15 @@
   --couleur-arriere-bouton: #0056b3;
   --couleur-hover-bouton: #81bdfd;
 
-  --couleur-arriere-diagonal: gray;
+  --couleur-arriere-diagonal: rgb(44, 78, 130);
 
   --couleur-bouton1: rgb(105, 190, 255);
   --couleur-bouton2: rgb(53, 134, 255);
   --couleur-bouton3: rgb(147, 208, 255);
   --couleur-bouton4: rgb(53, 134, 255);
   
-  --couleur-lien: black;
-  --couleur-hover: red;
+  --couleur-lien: rgb(25, 52, 126);
+  --couleur-hover: rgb(0, 0, 0);
+  --focus-outline-color: rgb(25, 52, 126);
 
 }
