@@ -305,4 +305,19 @@ button:focus {
   transform: skewY(-5deg);
   border: solid 1px black;
   box-shadow: 10px 10px 30px 10px;
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 5%;
+  border: 1px solid #ff0000;
 }/*# sourceMappingURL=style.css.map */
