@@ -1,0 +1,32 @@
+/*
+Feuille de style du menu principal
+*/
+
+.menu-principal-container { //nav
+  background-color: rgba(0, 0, 0, 0.242);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding-top: 46px;
+  
+
+  .menu{ //ul
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+  }
+
+  .menu-item{ //li
+    flex: 0 0 17.2rem;
+    text-align: center;
+  }
+
+  .menu-item a{ //li a
+    color: #fff;
+    text-decoration: none;
+  }
+}
+

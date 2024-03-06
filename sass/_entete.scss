@@ -1,11 +1,11 @@
-.entete__header{
+.hero{
   background-image: url("images/wordpress-theme.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
 }
 
 @media screen and (max-width:600px) {
-  .entete__header{
+  .hero{
     background-size: 30%;
     background-position: 10% 14%;
   }
