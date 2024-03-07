@@ -14,9 +14,17 @@ Feuille de style du menu principal
   
 
   .menu{ //ul
+    position: absolute;
     display: flex;
-    justify-content: center;
-    list-style: none;
+    list-style-type: none;
+    flex-direction: column;
+    transform:translateX(300%);
+    @media(min-width: 700px){
+      display: flex;
+      flex-direction: row;
+      position: static;
+      transform:translateX(0%);
+    }
     
   }
 
@@ -29,5 +37,25 @@ Feuille de style du menu principal
     color: #fff;
     text-decoration: none;
   }
+
+  .menu-item a:hover{
+    border: 2px dotted rgb(39, 79, 172);
+    padding: 4px;
+    border-radius: 30%;
+  }
+}
+
+#burger{
+  display: block;
+  position: absolute;
+  top: 10px;
+  right:10px;
+  @media(min-width: 700px) {
+    display: none
+  }
+}
+
+#chk_burger:checked ~ .menu{
+  transform:translateY(30)
 }
 

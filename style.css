@@ -67,6 +67,14 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --_couleur-arriere: hsl(var(--u1),100%, 80%) ;
 }
 
+#entete {
+  --_couleur-arriere-vague:hsl(var(--u1), 70%, 50%) ;
+}
+
+#galerie {
+  --_couleur-arriere-vague:hsl(var(--u1), 70%, 50%) ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +105,10 @@ body {
 
 .global > section {
   min-width: 20%;
+}
+
+#menu__entete {
+  position: relative;
 }
 
 #entete, #footer {
@@ -391,9 +403,19 @@ Feuille de style du menu principal
   padding-bottom: 2px;
 }
 .menu-principal-container .menu {
+  position: absolute;
   display: flex;
-  justify-content: center;
-  list-style: none;
+  list-style-type: none;
+  flex-direction: column;
+  transform: translateX(300%);
+}
+@media (min-width: 700px) {
+  .menu-principal-container .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    transform: translateX(0%);
+  }
 }
 .menu-principal-container .menu-item {
   flex: 0 0 17.2rem;
@@ -402,4 +424,25 @@ Feuille de style du menu principal
 .menu-principal-container .menu-item a {
   color: #fff;
   text-decoration: none;
+}
+.menu-principal-container .menu-item a:hover {
+  border: 2px dotted rgb(39, 79, 172);
+  padding: 4px;
+  border-radius: 30%;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateY(30);
 }/*# sourceMappingURL=style.css.map */
