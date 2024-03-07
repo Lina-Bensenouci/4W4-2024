@@ -434,8 +434,9 @@ Feuille de style du menu principal
 #burger {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  left: 650px;
+  z-index: 3;
 }
 @media (min-width: 700px) {
   #burger {
@@ -444,5 +445,5 @@ Feuille de style du menu principal
 }
 
 #chk_burger:checked ~ .menu {
-  transform: translateY(30);
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */
