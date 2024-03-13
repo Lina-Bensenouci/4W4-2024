@@ -15,5 +15,5 @@
 - Création d'un « template-part » (gabarit)
 - Créer un template-part qui permettra d'afficher les vagues.
 
-- https://github.com/Lina-Bensenouci/4W4-2024/tree/labo3
+- https://github.com/Lina-Bensenouci/4W4-2024/tree/labo4
   
