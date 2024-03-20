@@ -1,5 +1,6 @@
 
 <?php get_header();?>
+<h1>INDEX.PHP</h1>
     <div id="entete" class="global">
       <section class="hero">
         <h1>Thème du groupe #1 (h1)</h1>
@@ -31,7 +32,7 @@
           ?>
           <div class="carte">
             <h3><?php echo $titre; ?></h3>
-            <p><?php the_content(); ?> </p>
+            <p><?php the_content(); ?></p>
         </div>
         <?php endwhile; ?>
         <?php endif; ?>

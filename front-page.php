@@ -1,10 +1,9 @@
 
 <?php get_header();?>
-  <h1>FRONT-PAGE.PHP</h1>
     <div id="entete" class="global">
       <section class="hero">
-        <h1>Thème du groupe #1 (h1)</h1>
-        <h2>4W4 - Conception d'interface <span>et développement web</span></h2>
+        <h1><?php echo get_bloginfo("name")?></h1>
+        <h2><?php echo get_bloginfo("description")?></h2>
         <h3>TIM - Collège de Maisonneuve</h3>
         <button>Événements</button>
       </section>
@@ -14,25 +13,18 @@
     <div id="accueil" class="global">
       <section>
         <h2>Accueil</h2>
-        <h3>Liste des cours</h3>
+        <h3>Destinations de voyage</h3>
         <div class="cours">
         <?php
-        /*
-          if(have_posts()){
-            while(have_posts()){
-              the_post();
-              the_title('<h4>','</h4>');
-              echo wp_trim_words(get_the_content(),30);
-            }
-          }
-        */
         if(have_posts()):
           while(have_posts()): the_post();
           $titre = get_the_title();
           ?>
           <div class="carte">
-            <h3><?php echo $titre; ?></h3>
+            <h3><?php the_title(); ?></h3>
             <p><?php echo wp_trim_words(get_the_content(),10); ?></p>
+            <?php the_category() ?>
+            <a href="<?php the_permalink(); ?>" >Plus</a>
         </div>
         <?php endwhile; ?>
         <?php endif; ?>
@@ -54,16 +46,5 @@
         <a href="https://www.lipsum.com/">Lorem Ipsum</a> is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industryty.
       </section>
     </div>
-    <div id="footer" class="global">
-      <footer>
-        <h2>Footer</h2>
-        <div>
-        <h5>Réseaux(h5)</h5>
-        <h6>Adresse(h6)</h6>
-        <button>Page</button>
-      </div>
-      </footer>
-      <?php get_template_part('gabarits/vague');?>
-    </div>
-  </body>
-</html>
+    <?php get_footer() ?>
+   

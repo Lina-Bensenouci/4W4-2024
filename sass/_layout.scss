@@ -17,7 +17,7 @@ body{
 .global > section,
 .global > header,
 .global > footer{
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   z-index: 1;
   padding: 3rem;
 }
@@ -32,6 +32,7 @@ body{
 
 #menu__entete{
   position:relative;
+  background-color: var(--couleur-arriere-accueil)
 }
 
 #entete, #footer{
@@ -75,7 +76,7 @@ footer > div{
 
 @media screen and (max-width:600px) {
   #entete{
-    min-height: 70vh;
+    min-height: 50vh;
   }
   footer > div{
     display: flex;

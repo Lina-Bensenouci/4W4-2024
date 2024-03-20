@@ -94,7 +94,7 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   z-index: 1;
   padding: 3rem;
 }
@@ -109,6 +109,7 @@ body {
 
 #menu__entete {
   position: relative;
+  background-color: var(--couleur-arriere-accueil);
 }
 
 #entete, #footer {
@@ -152,7 +153,7 @@ footer > div {
 
 @media screen and (max-width: 600px) {
   #entete {
-    min-height: 70vh;
+    min-height: 50vh;
   }
   footer > div {
     display: flex;
@@ -333,7 +334,7 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1em;
   margin-top: 5%;
   padding: 1rem;
 }
@@ -346,6 +347,12 @@ button:focus {
   border: 4px solid rgb(44, 78, 130);
   transition: transform 0.5s;
   background-color: var(--_couleur-arriere);
+}
+
+.post-categories {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .carte:hover {
@@ -393,14 +400,7 @@ button:focus {
 Feuille de style du menu principal
 */
 .menu-principal-container {
-  background-color: var(--background-menu);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 50px;
-  padding-top: 44px;
-  padding-bottom: 2px;
+  background-color: var(--couleur-accueil);
 }
 .menu-principal-container .menu {
   position: absolute;
@@ -411,32 +411,41 @@ Feuille de style du menu principal
 }
 @media (min-width: 700px) {
   .menu-principal-container .menu {
-    display: flex;
-    flex-direction: row;
     position: static;
-    transform: translateX(0%);
+    flex-direction: row;
+    display: flex;
+    transform: translateX(0);
   }
 }
 .menu-principal-container .menu-item {
-  flex: 0 0 17.2rem;
+  flex: 1 0 50px;
   text-align: center;
+  background-color: var(--couleur-accueil);
+  margin: 5px;
+  padding: 5px;
 }
 .menu-principal-container .menu-item a {
   color: #fff;
-  text-decoration: none;
 }
 .menu-principal-container .menu-item a:hover {
-  border: 2px dotted rgb(39, 79, 172);
-  padding: 4px;
-  border-radius: 30%;
+  border: 2px dotted blue;
+  text-decoration: none;
+  border-radius: 15%;
+  padding: 3px;
 }
 
 #burger {
   display: block;
   position: absolute;
-  top: 0px;
-  left: 650px;
-  z-index: 3;
+  top: 10px;
+  right: 10px;
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 @media (min-width: 700px) {
   #burger {
@@ -445,5 +454,5 @@ Feuille de style du menu principal
 }
 
 #chk_burger:checked ~ .menu {
-  transform: translateY(0);
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */
