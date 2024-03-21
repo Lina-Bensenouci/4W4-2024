@@ -75,6 +75,154 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --_couleur-arriere-vague:hsl(var(--u1), 70%, 50%) ;
 }
 
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -109,7 +257,6 @@ body {
 
 #menu__entete {
   position: relative;
-  background-color: var(--couleur-arriere-accueil);
 }
 
 #entete, #footer {
@@ -400,64 +547,4 @@ button:focus {
   .carte{
     flex: 0 1 40%;
   }
-}*/
-/*
-Feuille de style du menu principal
-*/
-.menu-principal-container {
-  background-color: var(--couleur-accueil);
-}
-.menu-principal-container .menu {
-  position: absolute;
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  transform: translateX(300%);
-}
-@media (min-width: 700px) {
-  .menu-principal-container .menu {
-    position: static;
-    flex-direction: row;
-    display: flex;
-    transform: translateX(0);
-  }
-}
-.menu-principal-container .menu-item {
-  flex: 1 0 50px;
-  text-align: center;
-  background-color: var(--couleur-accueil);
-  margin: 5px;
-  padding: 5px;
-}
-.menu-principal-container .menu-item a {
-  color: #fff;
-}
-.menu-principal-container .menu-item a:hover {
-  border: 2px dotted blue;
-  text-decoration: none;
-  border-radius: 15%;
-  padding: 3px;
-}
-
-#burger {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#burger {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-@media (min-width: 700px) {
-  #burger {
-    display: none;
-  }
-}
-
-#chk_burger:checked ~ .menu {
-  transform: translateX(0);
-}/*# sourceMappingURL=style.css.map */
+}*//*# sourceMappingURL=style.css.map */
