@@ -1,7 +1,7 @@
 
 <?php get_header();?>
    
-    <div id="accueil" class="global">
+    <div id="accueil" class="global clr-agencement-primaire">
       <section>
         <h3>Destination de voyage</h3>
         <h3>Catégorie: <?php the_category() ?></h3>

@@ -57,19 +57,28 @@
 .menu-item {
   flex: 1 0 50px;
   text-align: center;
-  background-color: var(--couleur-arriere-accueil);
+  background-color: rgb(31, 89, 160);
   margin: 5px;
   padding: 5px;
+  border-radius: 30%;
   transition: scale 0.5s;
   @media (min-width: 700px){
-    padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    
   }
 }
 
 .menu-item a {
   color: #fff;
 }
+.menu-item a:hover {
+  text-decoration: none;
+}
+
+
 
 .menu-item:hover{
   scale: 1.05;
+  border: 1px white dotted;
 }

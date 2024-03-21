@@ -502,6 +502,15 @@ button:focus {
   gap: 0.5rem;
 }
 
+a {
+  font-size: smaller;
+  margin-left: 2px;
+}
+
+.plus:hover {
+  color: rgb(225, 244, 255);
+}
+
 .carte:hover {
   background-color: rgba(0, 0, 0, 0.049);
   transform: scale(1.03);
@@ -603,14 +612,16 @@ button:focus {
 .menu-item {
   flex: 1 0 50px;
   text-align: center;
-  background-color: var(--couleur-arriere-accueil);
+  background-color: rgb(31, 89, 160);
   margin: 5px;
   padding: 5px;
+  border-radius: 30%;
   transition: scale 0.5s;
 }
 @media (min-width: 700px) {
   .menu-item {
-    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -618,6 +629,11 @@ button:focus {
   color: #fff;
 }
 
+.menu-item a:hover {
+  text-decoration: none;
+}
+
 .menu-item:hover {
   scale: 1.05;
+  border: 1px white dotted;
 }/*# sourceMappingURL=style.css.map */

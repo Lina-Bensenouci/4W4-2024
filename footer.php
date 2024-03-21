@@ -1,10 +1,9 @@
 <div id="footer" class="global">
       <footer>
-        <h2>Footer</h2>
         <div>
-        <h5>Réseaux(h5)</h5>
-        <h6>Adresse(h6)</h6>
-        <button>Page</button>
+        <h5>Prenez contact avec le club</h5>
+        <h6>Notre adresse</h6>
+        <button>Accueil</button>
       </div>
       </footer>
       <?php get_template_part('gabarits/vague');?>
