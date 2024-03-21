@@ -1,19 +1,24 @@
-# Labo 4
-## Auteur: Lina Bensenouci
-## Avancement du site WP
+# TP1 - Club de voyage
 
-## Créer une nouvelle branche « labo4 »
 
-### Création du menu principal
-- Ajouter un menu permettant d'accéder
-- à vos cinq cours préférés
-- à chacune des sections de la page
+# Exercice 2 (5 points)
 
-- Le menu doit être formatter en utilisant composant/_menu.scss Le menu doit être adaptatif et être amovible en version mobile.
-- Création d'un header.php
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
-- Création d'un « template-part » (gabarit)
-- Créer un template-part qui permettra d'afficher les vagues.
+- Compléter l'utilisation du mapping de couleur avec boucle et mixin (1 point)
+- Changer le titre et la description général du site (,2 point)
+- Dans la page d'accueil on voit uniquement les destinations « populaire »
+- Chaque destination contient les catégories associées. (1 point)
+    - Améliorer l'apparence de la liste des catégories 
+    - Améliorer l'apparence de chacune des cartes 
+- Afficher des cartes de catégories pour l'ensemble des catégories   (2 points) 
+    - Titre de la catégorie
+    - 10 premiers mot de la description
+    - Un lien permet d'accéder à la liste des destination de cette catégorie
+    - Le nombre d'article pour cette catégorie
+- Créer une github-page : index.htm  (front-page.php)  (1 point)
+    - Ajouter l'adresse de la github-page dans votre readme.
+    - Dans le readme.md
+    - Le non de l'auteur
+    - Courte description de votre tp1
 
 - https://github.com/Lina-Bensenouci/4W4-2024/tree/Tp1
   
