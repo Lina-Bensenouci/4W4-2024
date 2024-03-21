@@ -76,35 +76,35 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(200, 100%, 75%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(200, 100%, 75%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(200, 100%, 40%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(200, 100%, 40%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(200, 100%, 20%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(200, 100%, 20%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(200, 100%, 5%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(200, 100%, 5%);
 }
 
 .clr-secondaire-100 {
@@ -204,8 +204,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(200, 100%, 5%);
+  background-image: linear-gradient(90deg, hsl(200, 100%, 75%), hsl(200, 100%, 40%));
 }
 
 .clr-agencement-secondaire {
@@ -268,11 +268,6 @@ body {
   color: var(--couleur-avant-entete);
   position: relative;
   min-height: 100vh;
-}
-
-.logo {
-  width: 80px;
-  margin-top: 30px;
 }
 
 #accueil {
@@ -556,6 +551,8 @@ button:focus {
 
 .menu {
   transform: translateX(350%);
+  transition: transform 0.8s;
+  list-style-type: none;
 }
 
 @media (min-width: 700px) {
@@ -563,12 +560,19 @@ button:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
     transform: translateX(0);
   }
 }
 .menu__header {
   overflow-x: hidden;
+}
+
+#burger {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }
 
 @media (min-width: 700px) {
@@ -583,4 +587,37 @@ button:focus {
 
 #chk_burger:checked ~ .menu__header .menu {
   transform: translateX(0);
+}
+
+.logo {
+  width: 100px;
+  margin-top: 80px;
+  margin-left: 5px;
+}
+@media (min-width: 700px) {
+  .logo {
+    margin-top: 25px;
+  }
+}
+
+.menu-item {
+  flex: 1 0 50px;
+  text-align: center;
+  background-color: var(--couleur-arriere-accueil);
+  margin: 5px;
+  padding: 5px;
+  transition: scale 0.5s;
+}
+@media (min-width: 700px) {
+  .menu-item {
+    padding: 0px;
+  }
+}
+
+.menu-item a {
+  color: #fff;
+}
+
+.menu-item:hover {
+  scale: 1.05;
 }/*# sourceMappingURL=style.css.map */

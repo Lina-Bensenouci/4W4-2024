@@ -1,10 +1,10 @@
 
 <?php get_header();?>
-    <div id="entete" class="global">
+    <div id="entete" class="global clr-agencement-primaire">
       <section class="hero">
         <h1><?php echo get_bloginfo("name")?></h1>
         <h2><?php echo get_bloginfo("description")?></h2>
-        <h3>TIM - Collège de Maisonneuve</h3>
+        <h3>Voyagez au Gré de Votre Imagination</h3>
         <button>Événements</button>
       </section>
       <?php get_template_part('gabarits/vague');?>
