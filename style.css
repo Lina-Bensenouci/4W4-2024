@@ -547,4 +547,40 @@ button:focus {
   .carte{
     flex: 0 1 40%;
   }
-}*//*# sourceMappingURL=style.css.map */
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  transform: translateX(350%);
+}
+
+@media (min-width: 700px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    transform: translateX(0);
+  }
+}
+.menu__header {
+  overflow-x: hidden;
+}
+
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+
+#chk_burger:checked ~ .menu__header .menu {
+  transform: translateX(0);
+}/*# sourceMappingURL=style.css.map */
