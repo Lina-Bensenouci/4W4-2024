@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme GR1</title> 
-    <link rel="stylesheet" href="http://normalize.css">
-    <link rel="stylesheet" href="http://style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@200;300&family=Playfair+Display:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <svg id="burger" idwidth="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#fff"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </label>
       <header class="menu__header">
-          <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-99"><a href="http://localhost/4w4lina/index.php/category/sport/" aria-current="page">Sport</a></li>
+          <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a href="http://localhost/4w4lina/index.php/category/sport/">Sport</a></li>
 <li id="menu-item-100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100"><a href="http://localhost/4w4lina/index.php/category/pleine-nature/">Pleine nature</a></li>
 <li id="menu-item-101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a href="http://localhost/4w4lina/index.php/category/croisiere/">Croisière</a></li>
 <li id="menu-item-102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-102"><a href="http://localhost/4w4lina/index.php/category/aventure/">Aventure</a></li>
@@ -27,112 +27,83 @@
 <li id="menu-item-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="http://localhost/4w4lina/index.php/category/repos/">Repos</a></li>
 <li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="http://localhost/4w4lina/index.php/category/zen/">Zen</a></li>
 </ul></nav>      </header>
-</div>   
+</div>    <div id="entete" class="global clr-agencement-primaire">
+      <section class="hero">
+        <h1>Club de voyage</h1>
+        <h2>Voyagez sans limites</h2>
+        <h3>Voyagez au Gré de Votre Imagination</h3>
+        <button id="scrollToEvenement">Événements</button>
+      </section>
+          <div class = "vague">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" style = "fill: var(--couleur-arriere-accueil)" class= "remplissage"></path>
+      </svg>
+      </div>      <!--vague-->
+    </div>
     <div id="accueil" class="global">
       <section>
-        <h3>Destination de voyage</h3>
-        <h3>Catégorie: <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/repos/" rel="category tag">Repos</a></li>
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul></h3>
+        <h3>Destinations de voyage</h3>
         <div class="cours">
                   <div class="carte">
-            <h3>Queenstown, Nouvelle-Zélande</h3>
-            <p>Queenstown, nichée au bord du magnifique lac Wakatipu et entourée…</p>
+            <h3>Chefchaouen, Maroc</h3>
+            <p>Chefchaouen, nichée dans les montagnes du Rif au nord du…</p>
             <ul class="post-categories">
+	<li><a href="http://localhost/4w4lina/index.php/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/4w4lina/index.php/category/repos/" rel="category tag">Repos</a></li></ul>            <a href="" class="plus"http://localhost/4w4lina/index.php/2024/03/20/chefchaouen-maroc/>Plus</a>
+        </div>
+                  <div class="carte">
+            <h3>Dubai, Émirats arabes unis</h3>
+            <p>Une croisière à Dubai vous plonge dans un monde de…</p>
+            <ul class="post-categories">
+	<li><a href="http://localhost/4w4lina/index.php/category/croisiere/" rel="category tag">Croisière</a></li>
+	<li><a href="http://localhost/4w4lina/index.php/category/populaire/" rel="category tag">Populaire</a></li></ul>            <a href="" class="plus"http://localhost/4w4lina/index.php/2024/03/20/dubai-emirats-arabes-unis/>Plus</a>
+        </div>
+                  <div class="carte">
+            <h3>Kyoto, Japon</h3>
+            <p>Kyoto incarne l'essence même de la tradition japonaise. En tant…</p>
+            <ul class="post-categories">
+	<li><a href="http://localhost/4w4lina/index.php/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost/4w4lina/index.php/category/populaire/" rel="category tag">Populaire</a></li>
 	<li><a href="http://localhost/4w4lina/index.php/category/repos/" rel="category tag">Repos</a></li>
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/queenstown-nouvelle-zelande/" >Plus</a>
+	<li><a href="http://localhost/4w4lina/index.php/category/zen/" rel="category tag">Zen</a></li></ul>            <a href="" class="plus"http://localhost/4w4lina/index.php/2024/03/20/kyoto-japon/>Plus</a>
         </div>
                   <div class="carte">
-            <h3>Whistler, Canada</h3>
-            <p>Whistler, située en Colombie-Britannique, est une destination de renommée mondiale…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/whistler-canada/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Bora Bora, Polynésie française</h3>
-            <p>Bora Bora est un paradis tropical offrant une multitude d'activités…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/bora-bora-polynesie-francaise/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Cancún, Mexique</h3>
-            <p>Cancún est une destination ensoleillée offrant une multitude d'activités sportives…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/cancun-mexique/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Kona, Hawaï</h3>
-            <p>Kona, située sur la côte ouest de l'île d'Hawaï, est…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/kona-hawai/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Arosa, Suisse</h3>
-            <p>Arosa, une station de ski pittoresque nichée dans les Alpes…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/arosa-suisse/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Bariloche, Argentine</h3>
-            <p>Bariloche, située dans la région des lacs de Patagonie, est…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/bariloche-argentine/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>La Costa Brava, Espagne</h3>
-            <p>La Costa Brava, le long de la côte nord-est de…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/la-costa-brava-espagne/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Moab, Utah, États-Unis</h3>
-            <p>Moab, nichée au cœur du désert de l'Utah, est une…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/moab-utah-etats-unis/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Whitsunday Islands, Australie</h3>
-            <p>Les Whitsunday Islands, situées au large de la côte du…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/whitsunday-islands-australie/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Lake Tahoe, Californie/Nevada, États-Unis</h3>
-            <p>Lake Tahoe, situé à cheval sur la frontière entre la…</p>
-            <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/lake-tahoe-californie-nevada-etats-unis/" >Plus</a>
-        </div>
-                  <div class="carte">
-            <h3>Interlaken, Suisse</h3>
-            <p>Située entre les lacs de Brienz et de Thoune, Interlaken…</p>
+            <h3>Mont Fuji, Japon</h3>
+            <p>Le Mont Fuji, icône sacrée du Japon, offre une aventure…</p>
             <ul class="post-categories">
 	<li><a href="http://localhost/4w4lina/index.php/category/aventure/" rel="category tag">Aventure</a></li>
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/interlaken-suisse/" >Plus</a>
+	<li><a href="http://localhost/4w4lina/index.php/category/populaire/" rel="category tag">Populaire</a></li></ul>            <a href="" class="plus"http://localhost/4w4lina/index.php/2024/03/20/mont-fuji-japon/>Plus</a>
         </div>
                   <div class="carte">
-            <h3>Chamonix, France</h3>
-            <p>Chamonix, au pied du Mont Blanc, est le paradis des…</p>
+            <h3>Ubud, Bali</h3>
+            <p>Ubud, situé au cœur de l'île indonésienne de Bali, est…</p>
             <ul class="post-categories">
-	<li><a href="http://localhost/4w4lina/index.php/category/aventure/" rel="category tag">Aventure</a></li>
-	<li><a href="http://localhost/4w4lina/index.php/category/sport/" rel="category tag">Sport</a></li></ul>            <a href="http://localhost/4w4lina/index.php/2024/03/20/chamonix-france/" >Plus</a>
+	<li><a href="http://localhost/4w4lina/index.php/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/4w4lina/index.php/category/zen/" rel="category tag">Zen</a></li></ul>            <a href="" class="plus"http://localhost/4w4lina/index.php/2024/03/20/ubud-bali/>Plus</a>
         </div>
                       </div>
+      </section>
+    </div>
+    <div id="evenement" class="global diagonal">
+      <section>
+        <h2>Événement</h2>
+        <h4>Horaire</h4>
+        <h4>Spécialités culinaires des destinations populaires</h4>
       </section>
     </div>
     <div id="galerie" class="global">
       <section>
         <h2>Galerie</h2>
-        <h3>Photo du jour(h3)</h3>
-        <a href="https://www.lipsum.com/">Lorem Ipsum</a> is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industryty.
+        <h3>Photos de destinations</h3>
+        <a href="https://www.lipsum.com/">Suivant</a>
       </section>
     </div>
     <div id="footer" class="global">
       <footer>
-        <h2>Footer</h2>
         <div>
-        <h5>Réseaux(h5)</h5>
-        <h6>Adresse(h6)</h6>
-        <button>Page</button>
+        <h5>Prenez contact avec le club</h5>
+        <h6>Notre adresse</h6>
+        <button>Accueil</button>
       </div>
       </footer>
           <div class = "vague">
@@ -141,4 +112,9 @@
       </svg>
       </div>    </div>
   </body>
-</html> 
+</html>    <script>
+        document.getElementById('scrollToEvenement').addEventListener('click', function() {
+            document.getElementById('evenement').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+   
